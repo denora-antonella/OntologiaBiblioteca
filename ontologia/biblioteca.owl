@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/biblioteca.owl"
+         xmlns="http://example.org/biblioteca.owl#">
+
+<owl:Ontology rdf:about="http://example.org/biblioteca.owl"/>
+
+<owl:ObjectProperty rdf:about="#haPrestito">
+  <rdfs:domain rdf:resource="#Persona"/>
+  <rdfs:range rdf:resource="#Prestito"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#riguardaLibro">
+  <rdfs:domain rdf:resource="#Prestito"/>
+  <rdfs:range rdf:resource="#Libro"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#appartieneCategoria">
+  <rdfs:domain rdf:resource="#Libro"/>
+  <rdfs:range rdf:resource="#Categoria"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#sottoCategoriaDi">
+  <rdfs:domain rdf:resource="#Categoria"/>
+  <rdfs:range rdf:resource="#Categoria"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#nomeCompleto">
+  <rdfs:domain rdf:resource="#Persona"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#matricola">
+  <rdfs:domain rdf:resource="#Persona"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#titolo">
+  <rdfs:domain rdf:resource="#Libro"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#autore">
+  <rdfs:domain rdf:resource="#Libro"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#annoPubblicazione">
+  <rdfs:domain rdf:resource="#Libro"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#isbn">
+  <rdfs:domain rdf:resource="#Libro"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#dataInizio">
+  <rdfs:domain rdf:resource="#Prestito"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#dataFine">
+  <rdfs:domain rdf:resource="#Prestito"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#statoPrestito">
+  <rdfs:domain rdf:resource="#Prestito"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Persona">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Libro">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Categoria">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Prestito">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#cat_Biblioteca">
+  <rdf:type rdf:resource="#Categoria"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Letteratura">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Biblioteca"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Narrativa">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Letteratura"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_RomanziStorici">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Narrativa"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Risorgimento">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_RomanziStorici"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_StoriaItalia">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Storia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Saggistica">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Biblioteca"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Storia">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Saggistica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Medioevo">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Storia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_SecondaGuerraMondiale">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Storia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Informatica">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Biblioteca"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_IntelligenzaArtificiale">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Informatica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_MachineLearning">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_IntelligenzaArtificiale"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Reti">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Informatica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_SicurezzaInformatica">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Reti"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Scienze">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Biblioteca"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Matematica">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Scienze"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_AlgebraLineare">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Matematica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Statistica">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Matematica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Bambini">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Biblioteca"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Fiabe">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Bambini"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cat_Fantasy">
+  <rdf:type rdf:resource="#Categoria"/>
+  <sottoCategoriaDi rdf:resource="#cat_Bambini"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Anna">
+  <rdf:type rdf:resource="#Persona"/>
+  <haPrestito rdf:resource="#Prestito1"/>
+  <haPrestito rdf:resource="#Prestito3"/>
+  <haPrestito rdf:resource="#Prestito9"/>
+  <nomeCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anna De Nora</nomeCompleto>
+  <matricola rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S12345</matricola>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Marco">
+  <rdf:type rdf:resource="#Persona"/>
+  <haPrestito rdf:resource="#Prestito2"/>
+  <haPrestito rdf:resource="#Prestito7"/>
+  <haPrestito rdf:resource="#Prestito11"/>
+  <nomeCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marco Bianchi</nomeCompleto>
+  <matricola rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S23456</matricola>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ProfRossi">
+  <rdf:type rdf:resource="#Persona"/>
+  <haPrestito rdf:resource="#Prestito5"/>
+  <nomeCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prof. Carlo Rossi</nomeCompleto>
+  <matricola rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOC001</matricola>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lucia">
+  <rdf:type rdf:resource="#Persona"/>
+  <haPrestito rdf:resource="#Prestito4"/>
+  <haPrestito rdf:resource="#Prestito8"/>
+  <nomeCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lucia Verdi</nomeCompleto>
+  <matricola rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S34567</matricola>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Giulia">
+  <rdf:type rdf:resource="#Persona"/>
+  <haPrestito rdf:resource="#Prestito6"/>
+  <haPrestito rdf:resource="#Prestito10"/>
+  <nomeCompleto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giulia Neri</nomeCompleto>
+  <matricola rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S45678</matricola>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LibroGaribaldi">
+  <rdf:type rdf:resource="#Libro"/>
+  <appartieneCategoria rdf:resource="#cat_Risorgimento"/>
+  <appartieneCategoria rdf:resource="#cat_RomanziStorici"/>
+  <titolo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Il Risorgimento e Garibaldi</titolo>
+  <autore rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G. Conti</autore>
+  <annoPubblicazione rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</annoPubblicazione>
+  <isbn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">978-0000000001</isbn>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LibroManzoni">
+  <rdf:type rdf:resource="#Libro"/>
+  <appartieneCategoria rdf:resource="#cat_Narrativa"/>
+  <titolo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I Promessi Sposi</titolo>
+  <autore rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A. Manzoni</autore>
+  <annoPubblicazione rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1840</annoPubblicazione>
+  <isbn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">978-0000000002</isbn>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LibroAI">
+  <rdf:type rdf:resource="#Libro"/>
+  <appartieneCategoria rdf:resource="#cat_IntelligenzaArtificiale"/>
+  <titolo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduzione all'Intelligenza Artificiale</titolo>
+  <autore rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S. Ferri</autore>
+  <annoPubblicazione rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</annoPubblicazione>
+  <isbn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">978-0000000003</isbn>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LibroML">
+  <rdf:type rdf:resource="#Libro"/>
+  <appartieneCategoria rdf:resource="#cat_MachineLearning"/>
+  <appartieneCategoria rdf:resource="#cat_IntelligenzaArtificiale"/>
+  <titolo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning: basi e metodi</titolo>
+  <autore rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L. Serra</autore>
+  <annoPubblicazione rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</annoPubblicazione>
+  <isbn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">978-0000000004</isbn>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LibroReti">
+  <rdf:type rdf:resource="#Libro"/>
+  <appartieneCategoria rdf:resource="#cat_Reti"/>
+  <titolo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reti di calcolatori</titolo>
+  <autore rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M. Neri</autore>
+  <annoPubblicazione rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</annoPubblicazione>
+  <isbn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">978-0000000005</isbn>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LibroSicurezza">
+  <rdf:type rdf:resource="#Libro"/>
+  <appartieneCategoria rdf:resource="#cat_SicurezzaInformatica"/>
+  <titolo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sicurezza nelle reti</titolo>
+  <autore rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P. Gallo</autore>
+  <annoPubblicazione rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</annoPubblicazione>
+  <isbn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">978-0000000006</isbn>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LibroAlgebra">
+  <rdf:type rdf:resource="#Libro"/>
+  <appartieneCategoria rdf:resource="#cat_AlgebraLineare"/>
+  <titolo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algebra lineare e applicazioni</titolo>
+  <autore rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R. Leone</autore>
+  <annoPubblicazione rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</annoPubblicazione>
+  <isbn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">978-0000000007</isbn>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LibroStatistica">
+  <rdf:type rdf:resource="#Libro"/>
+  <appartieneCategoria rdf:resource="#cat_Statistica"/>
+  <titolo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistica per dati reali</titolo>
+  <autore rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F. Russo</autore>
+  <annoPubblicazione rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</annoPubblicazione>
+  <isbn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">978-0000000008</isbn>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LibroWW2">
+  <rdf:type rdf:resource="#Libro"/>
+  <appartieneCategoria rdf:resource="#cat_SecondaGuerraMondiale"/>
+  <titolo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La Seconda Guerra Mondiale</titolo>
+  <autore rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E. Bassi</autore>
+  <annoPubblicazione rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</annoPubblicazione>
+  <isbn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">978-0000000009</isbn>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LibroFiabe">
+  <rdf:type rdf:resource="#Libro"/>
+  <appartieneCategoria rdf:resource="#cat_Fiabe"/>
+  <titolo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiabe italiane</titolo>
+  <autore rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I. Calvino</autore>
+  <annoPubblicazione rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1956</annoPubblicazione>
+  <isbn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">978-0000000010</isbn>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LibroFantasy">
+  <rdf:type rdf:resource="#Libro"/>
+  <appartieneCategoria rdf:resource="#cat_Fantasy"/>
+  <titolo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Il castello delle nebbie</titolo>
+  <autore rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A. Lupi</autore>
+  <annoPubblicazione rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</annoPubblicazione>
+  <isbn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">978-0000000011</isbn>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prestito1">
+  <rdf:type rdf:resource="#Prestito"/>
+  <riguardaLibro rdf:resource="#LibroGaribaldi"/>
+  <dataInizio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-01-10</dataInizio>
+  <dataFine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-02-10</dataFine>
+  <statoPrestito rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chiuso</statoPrestito>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prestito2">
+  <rdf:type rdf:resource="#Prestito"/>
+  <riguardaLibro rdf:resource="#LibroAI"/>
+  <dataInizio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-01-20</dataInizio>
+  <dataFine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-02-20</dataFine>
+  <statoPrestito rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attivo</statoPrestito>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prestito3">
+  <rdf:type rdf:resource="#Prestito"/>
+  <riguardaLibro rdf:resource="#LibroReti"/>
+  <dataInizio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-01-25</dataInizio>
+  <dataFine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-02-25</dataFine>
+  <statoPrestito rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attivo</statoPrestito>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prestito4">
+  <rdf:type rdf:resource="#Prestito"/>
+  <riguardaLibro rdf:resource="#LibroML"/>
+  <dataInizio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-02-01</dataInizio>
+  <dataFine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-03-01</dataFine>
+  <statoPrestito rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attivo</statoPrestito>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prestito5">
+  <rdf:type rdf:resource="#Prestito"/>
+  <riguardaLibro rdf:resource="#LibroManzoni"/>
+  <dataInizio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-01-05</dataInizio>
+  <dataFine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-02-05</dataFine>
+  <statoPrestito rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chiuso</statoPrestito>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prestito6">
+  <rdf:type rdf:resource="#Prestito"/>
+  <riguardaLibro rdf:resource="#LibroSicurezza"/>
+  <dataInizio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-02-03</dataInizio>
+  <dataFine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-03-03</dataFine>
+  <statoPrestito rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attivo</statoPrestito>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prestito7">
+  <rdf:type rdf:resource="#Prestito"/>
+  <riguardaLibro rdf:resource="#LibroAlgebra"/>
+  <dataInizio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-02-04</dataInizio>
+  <dataFine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-03-04</dataFine>
+  <statoPrestito rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attivo</statoPrestito>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prestito8">
+  <rdf:type rdf:resource="#Prestito"/>
+  <riguardaLibro rdf:resource="#LibroStatistica"/>
+  <dataInizio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-02-06</dataInizio>
+  <dataFine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-03-06</dataFine>
+  <statoPrestito rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attivo</statoPrestito>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prestito9">
+  <rdf:type rdf:resource="#Prestito"/>
+  <riguardaLibro rdf:resource="#LibroWW2"/>
+  <dataInizio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-02-07</dataInizio>
+  <dataFine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-03-07</dataFine>
+  <statoPrestito rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attivo</statoPrestito>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prestito10">
+  <rdf:type rdf:resource="#Prestito"/>
+  <riguardaLibro rdf:resource="#LibroFiabe"/>
+  <dataInizio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-01-12</dataInizio>
+  <dataFine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-02-12</dataFine>
+  <statoPrestito rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chiuso</statoPrestito>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prestito11">
+  <rdf:type rdf:resource="#Prestito"/>
+  <riguardaLibro rdf:resource="#LibroFantasy"/>
+  <dataInizio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-01-14</dataInizio>
+  <dataFine rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2026-02-14</dataFine>
+  <statoPrestito rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chiuso</statoPrestito>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>

@@ -1,0 +1,109 @@
+nodo_iniziale,nodo_obiettivo,euristica,trovato,costo,lunghezza_percorso,tempo_ms,nodi_espansi,percorso,id_esperimento
+Anna,LibroGaribaldi,nulla,True,2.0,3,0.05740000051446259,4,Anna -> Prestito1 -> LibroGaribaldi,1
+Anna,LibroGaribaldi,nulla,True,2.0,3,0.024599998141638935,4,Anna -> Prestito1 -> LibroGaribaldi,2
+Anna,LibroGaribaldi,nulla,True,2.0,3,0.0202999945031479,4,Anna -> Prestito1 -> LibroGaribaldi,3
+Anna,LibroGaribaldi,nulla,True,2.0,3,0.018300008377991617,4,Anna -> Prestito1 -> LibroGaribaldi,4
+Anna,LibroGaribaldi,nulla,True,2.0,3,0.016599995433352888,4,Anna -> Prestito1 -> LibroGaribaldi,5
+Anna,LibroGaribaldi,nulla,True,2.0,3,0.015700003132224083,4,Anna -> Prestito1 -> LibroGaribaldi,6
+Anna,LibroGaribaldi,base,True,2.0,3,0.018699996871873736,4,Anna -> Prestito1 -> LibroGaribaldi,7
+Anna,LibroGaribaldi,base,True,2.0,3,0.016999998479150236,4,Anna -> Prestito1 -> LibroGaribaldi,8
+Anna,LibroGaribaldi,base,True,2.0,3,0.01649999467190355,4,Anna -> Prestito1 -> LibroGaribaldi,9
+Anna,LibroGaribaldi,base,True,2.0,3,0.020499996026046574,4,Anna -> Prestito1 -> LibroGaribaldi,10
+Anna,LibroGaribaldi,base,True,2.0,3,0.016600009985268116,4,Anna -> Prestito1 -> LibroGaribaldi,11
+Anna,LibroGaribaldi,base,True,2.0,3,0.015700003132224083,4,Anna -> Prestito1 -> LibroGaribaldi,12
+Anna,LibroGaribaldi,informata,True,2.0,3,0.020199993741698563,4,Anna -> Prestito1 -> LibroGaribaldi,13
+Anna,LibroGaribaldi,informata,True,2.0,3,0.018099992303177714,4,Anna -> Prestito1 -> LibroGaribaldi,14
+Anna,LibroGaribaldi,informata,True,2.0,3,0.01729998621158302,4,Anna -> Prestito1 -> LibroGaribaldi,15
+Anna,LibroGaribaldi,informata,True,2.0,3,0.019400002202019095,4,Anna -> Prestito1 -> LibroGaribaldi,16
+Anna,LibroGaribaldi,informata,True,2.0,3,0.01720000000204891,4,Anna -> Prestito1 -> LibroGaribaldi,17
+Anna,LibroGaribaldi,informata,True,2.0,3,0.016599995433352888,4,Anna -> Prestito1 -> LibroGaribaldi,18
+Marco,LibroAI,nulla,True,2.0,3,0.01679999695625156,4,Marco -> Prestito2 -> LibroAI,19
+Marco,LibroAI,nulla,True,2.0,3,0.015900004655122757,4,Marco -> Prestito2 -> LibroAI,20
+Marco,LibroAI,nulla,True,2.0,3,0.015400000847876072,4,Marco -> Prestito2 -> LibroAI,21
+Marco,LibroAI,nulla,True,2.0,3,0.014999997802078724,4,Marco -> Prestito2 -> LibroAI,22
+Marco,LibroAI,nulla,True,2.0,3,0.015300000086426735,4,Marco -> Prestito2 -> LibroAI,23
+Marco,LibroAI,nulla,True,2.0,3,0.01479999627918005,4,Marco -> Prestito2 -> LibroAI,24
+Marco,LibroAI,base,True,2.0,3,0.01589999010320753,4,Marco -> Prestito2 -> LibroAI,25
+Marco,LibroAI,base,True,2.0,3,0.016399993910454214,4,Marco -> Prestito2 -> LibroAI,26
+Marco,LibroAI,base,True,2.0,3,0.01720000000204891,4,Marco -> Prestito2 -> LibroAI,27
+Marco,LibroAI,base,True,2.0,3,0.01610000617802143,4,Marco -> Prestito2 -> LibroAI,28
+Marco,LibroAI,base,True,2.0,3,0.017300000763498247,4,Marco -> Prestito2 -> LibroAI,29
+Marco,LibroAI,base,True,2.0,3,0.015099998563528061,4,Marco -> Prestito2 -> LibroAI,30
+Marco,LibroAI,informata,True,2.0,3,0.01679999695625156,4,Marco -> Prestito2 -> LibroAI,31
+Marco,LibroAI,informata,True,2.0,3,0.016400008462369442,4,Marco -> Prestito2 -> LibroAI,32
+Marco,LibroAI,informata,True,2.0,3,0.016999998479150236,4,Marco -> Prestito2 -> LibroAI,33
+Marco,LibroAI,informata,True,2.0,3,0.016999998479150236,4,Marco -> Prestito2 -> LibroAI,34
+Marco,LibroAI,informata,True,2.0,3,0.016699996194802225,4,Marco -> Prestito2 -> LibroAI,35
+Marco,LibroAI,informata,True,2.0,3,0.016300007700920105,4,Marco -> Prestito2 -> LibroAI,36
+Marco,cat_AlgebraLineare,nulla,True,3.0,4,0.03460000152699649,8,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,37
+Marco,cat_AlgebraLineare,nulla,True,3.0,4,0.030399998649954796,8,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,38
+Marco,cat_AlgebraLineare,nulla,True,3.0,4,0.029400005587376654,8,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,39
+Marco,cat_AlgebraLineare,nulla,True,3.0,4,0.02849999873433262,8,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,40
+Marco,cat_AlgebraLineare,nulla,True,3.0,4,0.027699992642737925,8,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,41
+Marco,cat_AlgebraLineare,nulla,True,3.0,4,0.0278999941656366,8,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,42
+Marco,cat_AlgebraLineare,base,True,3.0,4,0.023599990527145565,7,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,43
+Marco,cat_AlgebraLineare,base,True,3.0,4,0.03300000389572233,7,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,44
+Marco,cat_AlgebraLineare,base,True,3.0,4,0.023100001271814108,7,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,45
+Marco,cat_AlgebraLineare,base,True,3.0,4,0.022899999748915434,7,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,46
+Marco,cat_AlgebraLineare,base,True,3.0,4,0.02300000051036477,7,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,47
+Marco,cat_AlgebraLineare,base,True,3.0,4,0.023200002033263445,7,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,48
+Marco,cat_AlgebraLineare,informata,True,3.0,4,0.025000001187436283,6,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,49
+Marco,cat_AlgebraLineare,informata,True,3.0,4,0.0219999928958714,6,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,50
+Marco,cat_AlgebraLineare,informata,True,3.0,4,0.0219999928958714,6,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,51
+Marco,cat_AlgebraLineare,informata,True,3.0,4,0.021500003640539944,6,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,52
+Marco,cat_AlgebraLineare,informata,True,3.0,4,0.021200001356191933,6,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,53
+Marco,cat_AlgebraLineare,informata,True,3.0,4,0.021200001356191933,6,Marco -> Prestito7 -> LibroAlgebra -> cat_AlgebraLineare,54
+ProfRossi,cat_StoriaItalia,nulla,True,5.5,9,3.166299997246824,20,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,55
+ProfRossi,cat_StoriaItalia,nulla,True,5.5,9,0.09609998960513622,20,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,56
+ProfRossi,cat_StoriaItalia,nulla,True,5.5,9,0.07660000119358301,20,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,57
+ProfRossi,cat_StoriaItalia,nulla,True,5.5,9,0.07319998985622078,20,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,58
+ProfRossi,cat_StoriaItalia,nulla,True,5.5,9,0.07310000364668667,20,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,59
+ProfRossi,cat_StoriaItalia,nulla,True,5.5,9,0.07239999831654131,20,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,60
+ProfRossi,cat_StoriaItalia,base,True,5.5,9,0.05399998917710036,14,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,61
+ProfRossi,cat_StoriaItalia,base,True,5.5,9,0.05280000914353877,14,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,62
+ProfRossi,cat_StoriaItalia,base,True,5.5,9,0.05160000000614673,14,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,63
+ProfRossi,cat_StoriaItalia,base,True,5.5,9,0.0501000031363219,14,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,64
+ProfRossi,cat_StoriaItalia,base,True,5.5,9,0.06289999873843044,14,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,65
+ProfRossi,cat_StoriaItalia,base,True,5.5,9,0.05059999239165336,14,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,66
+ProfRossi,cat_StoriaItalia,informata,True,5.5,9,0.05710001278202981,13,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,67
+ProfRossi,cat_StoriaItalia,informata,True,5.5,9,0.05269999383017421,13,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,68
+ProfRossi,cat_StoriaItalia,informata,True,5.5,9,0.052100003813393414,13,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,69
+ProfRossi,cat_StoriaItalia,informata,True,5.5,9,0.05089999467600137,13,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,70
+ProfRossi,cat_StoriaItalia,informata,True,5.5,9,0.05060000694356859,13,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,71
+ProfRossi,cat_StoriaItalia,informata,True,5.5,9,0.05290000990498811,13,ProfRossi -> Prestito5 -> LibroManzoni -> cat_Narrativa -> cat_Letteratura -> cat_Biblioteca -> cat_Saggistica -> cat_Storia -> cat_StoriaItalia,72
+LibroAI,cat_Biblioteca,nulla,True,2.0,4,0.02920000406447798,7,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,73
+LibroAI,cat_Biblioteca,nulla,True,2.0,4,0.02749999111983925,7,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,74
+LibroAI,cat_Biblioteca,nulla,True,2.0,4,0.42799999937415123,7,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,75
+LibroAI,cat_Biblioteca,nulla,True,2.0,4,0.11510000331327319,7,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,76
+LibroAI,cat_Biblioteca,nulla,True,2.0,4,0.0577000027988106,7,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,77
+LibroAI,cat_Biblioteca,nulla,True,2.0,4,0.05390000296756625,7,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,78
+LibroAI,cat_Biblioteca,base,True,2.0,4,0.040700004319660366,4,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,79
+LibroAI,cat_Biblioteca,base,True,2.0,4,0.0354999938281253,4,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,80
+LibroAI,cat_Biblioteca,base,True,2.0,4,0.03540000761859119,4,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,81
+LibroAI,cat_Biblioteca,base,True,2.0,4,0.029300004825927317,4,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,82
+LibroAI,cat_Biblioteca,base,True,2.0,4,0.03510000533424318,4,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,83
+LibroAI,cat_Biblioteca,base,True,2.0,4,0.03440000000409782,4,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,84
+LibroAI,cat_Biblioteca,informata,True,2.0,4,0.038699989090673625,4,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,85
+LibroAI,cat_Biblioteca,informata,True,2.0,4,0.036900004488416016,4,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,86
+LibroAI,cat_Biblioteca,informata,True,2.0,4,0.03609999839682132,4,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,87
+LibroAI,cat_Biblioteca,informata,True,2.0,4,0.03369999467395246,4,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,88
+LibroAI,cat_Biblioteca,informata,True,2.0,4,0.033199990866705775,4,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,89
+LibroAI,cat_Biblioteca,informata,True,2.0,4,0.03429999924264848,4,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca,90
+LibroAI,cat_Fiabe,nulla,True,3.0,6,0.1399000029778108,21,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,91
+LibroAI,cat_Fiabe,nulla,True,3.0,6,0.13270000636111945,21,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,92
+LibroAI,cat_Fiabe,nulla,True,3.0,6,0.12100000458303839,21,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,93
+LibroAI,cat_Fiabe,nulla,True,3.0,6,0.1357000001007691,21,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,94
+LibroAI,cat_Fiabe,nulla,True,3.0,6,0.1551999885123223,21,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,95
+LibroAI,cat_Fiabe,nulla,True,3.0,6,0.1419000036548823,21,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,96
+LibroAI,cat_Fiabe,base,True,3.0,6,0.14439999358728528,13,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,97
+LibroAI,cat_Fiabe,base,True,3.0,6,0.09530001261737198,13,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,98
+LibroAI,cat_Fiabe,base,True,3.0,6,0.08869999146554619,13,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,99
+LibroAI,cat_Fiabe,base,True,3.0,6,0.0914999982342124,13,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,100
+LibroAI,cat_Fiabe,base,True,3.0,6,0.142700009746477,13,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,101
+LibroAI,cat_Fiabe,base,True,3.0,6,0.07660000119358301,13,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,102
+LibroAI,cat_Fiabe,informata,True,3.0,6,0.08350001007784158,13,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,103
+LibroAI,cat_Fiabe,informata,True,3.0,6,0.06049999501556158,13,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,104
+LibroAI,cat_Fiabe,informata,True,3.0,6,0.05539999983739108,13,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,105
+LibroAI,cat_Fiabe,informata,True,3.0,6,0.08399999933317304,13,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,106
+LibroAI,cat_Fiabe,informata,True,3.0,6,0.08060000254772604,13,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,107
+LibroAI,cat_Fiabe,informata,True,3.0,6,0.0816000101622194,13,LibroAI -> cat_IntelligenzaArtificiale -> cat_Informatica -> cat_Biblioteca -> cat_Bambini -> cat_Fiabe,108
